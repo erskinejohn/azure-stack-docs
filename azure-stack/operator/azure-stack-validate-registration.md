@@ -51,7 +51,7 @@ You will need to have the Az PowerShell modules installed. For instructions, see
    ```powershell
    Install-Module -Name Az.BootStrapper -Force -AllowPrerelease
    Install-AzProfile -Profile 2020-09-01-hybrid -Force
-   Install-Module -Name Microsoft.AzureStack.ReadinessChecker -AllowPrerelease
+   Install-Module -Name Microsoft.AzureStack.ReadinessChecker
    ```
 
 2. From the PowerShell prompt, run the following command to set `$subscriptionID` as the Azure subscription to use. Replace `xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx` with your own subscription ID:
@@ -114,7 +114,7 @@ You will need to have the Az PowerShell modules installed. For instructions, see
 1. On a computer that meets the prerequisites, open an elevated PowerShell prompt, and then run the following command to install **AzsReadinessChecker**:
 
    ```powershell
-   Install-Module Microsoft.AzureStack.ReadinessChecker -Force -AllowPrerelease
+   Install-Module -Name Microsoft.AzureStack.ReadinessChecker -RequiredVersion 1.2100.1540.568
    ```
 
 2. From the PowerShell prompt, run the following command to set `$registrationCredential` as the account that's the subscription owner. Replace `subscriptionowner@contoso.onmicrosoft.com` with your account and tenant name:
